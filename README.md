@@ -1,1 +1,1 @@
-# EF-LASER
+# EMS (fficient and Effective Massively Multilingual Sentence Representation)

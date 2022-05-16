@@ -1,1 +1,1 @@
-# EMS (fficient and Effective Massively Multilingual Sentence Representation)
+# EMS (Efficient and Effective Massively Multilingual Sentence Representation)

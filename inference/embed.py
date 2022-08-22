@@ -214,8 +214,5 @@ if __name__ == '__main__':
         device = 'cuda:{}'.format(torch.cuda.current_device())
     else:
         device = 'cpu'
-    # with open(args.data_path, 'r') as f:
-    #     data = [line.strip() for line in f.readlines()]
-    # emb = encode(data, args.model_path, args.model_name, args.language, device)
     main(args.data_path, args.model_path, args.model_name, args.language, args.save_path, device)
 

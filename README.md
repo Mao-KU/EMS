@@ -27,16 +27,41 @@ cd ckpt
 wget -c https://lotus.kuee.kyoto-u.ac.jp/~zhuoyuanmao/EMS_model.pt
 cd ..
 ```
+Do inference for a file with one English sentence per line.
+```
+cd inference
+python embed.py -l en --data_path eng_sample --gpu --save_to eng_sample.pkl
+```
 
 ## Inference:
+### Preparations:
+- DATA: one sentence per line.
+
+### Inference with command lines and save to a binary file:
 - Inference with our pre-trained model:
 ```
-cd evaluation
-python embed.py -l {LANGUAGE OF YOUR DATA} --data_path {PATH OF DATA} --gpu --save_to {PATH TO SAVE NUMPY PICKLE FILE}
+cd inference
+python embed.py -l ${LANGUAGE_OF_YOUR_DATA} --data_path ${PATH_OF_DATA} --gpu --save_to ${PATH_TO_SAVE_NUMPY_PICKLE_FILE}
 ```
-The encoded embeddings are with the numpy shape of (number of the sentences, 1024) and saved to be a pickle file, which can be reloaded with "pickle.load()".
-- Inference with your from scratch model:
-TO BE UPDATED.
+- Inference with your from-scratch model:
+```
+cd inference
+python embed.py -l ${LANGUAGE_OF_YOUR_DATA} --data_path ${PATH_OF_DATA} -m ${MODEL_NAME} --model_path ${MODEL_PATH} --gpu --save_to ${PATH_TO_SAVE_NUMPY_PICKLE_FILE}
+```
+Note: Define your "model name" and model architectures in "inference/config.py". "model name" is set as "EMS" by default.
+- The encoded embeddings are with the numpy shape of (number of the sentences, 1024) and saved to be a pickle file, which can be reloaded in a python file as follows:
+```
+import pickle
+f = open(PATH, "rb")
+# PATH denotes the path to your embeddings
+# same as the value of --save_to above
+embs = pickle.load(f)
+# ... Your code here.
+```
+### Inference in python: Refer to "inference/eval.py", which imports "inference/embed.py" as a python library.
+```
+python eval.py -l ${LANGUAGE_OF_YOUR_DATA} --data_path ${PATH_OF_DATA} --gpu
+```
 
 ## Train from Scratch:
 TO BE UPDATED.

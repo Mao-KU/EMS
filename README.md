@@ -1,5 +1,5 @@
-# EMS (Efficient and Effective Massively Multilingual Sentence Representation)
-- Code for [paper](https://arxiv.org/abs/2205.15744)
+# EMS: Efficient and Effective Massively Multilingual Sentence Representation
+- Code for [paper (EMS: Efficient and Effective Massively Multilingual Sentence Representation)](https://arxiv.org/abs/2205.15744)
 - This is the codebase for training multilingual sentence embeddings.
 - Currently our EMS model supports 62 languages.
 - You can do inference for sentences with our pre-trained EMS model (refer to Inference below).
@@ -32,6 +32,7 @@ Do inference for a file with one English sentence per line.
 cd inference
 python embed.py -l en --data_path eng_sample --gpu --save_to eng_sample.pkl
 ```
+Now eng\_sample with one English sentence has been encoder into a numpy array with the shape of (1, 1024), which is saved as a binary file "inference/eng\_sample.pkl". Refer to the following for more details about inference and model training.
 
 ## Inference:
 ### Preparations:

@@ -68,24 +68,17 @@ python eval.py -l ${LANGUAGE_OF_YOUR_DATA} --data_path ${PATH_OF_DATA} --gpu
 TO BE UPDATED.
 
 ## Reference
-[1] Zhuoyuan Mao, Chenhui Chu, Sadao Kurohashi. 2022. [*EMS: Efficient and Effective Massively Multilingual Sentence Representation Learning*](https://arxiv.org/abs/2205.15744)
+[1] Zhuoyuan Mao, Chenhui Chu, Sadao Kurohashi. 2024. [*EMS: Efficient and Effective Massively Multilingual Sentence Embedding Learning*](https://arxiv.org/abs/2205.15744)
 ```
-@article{DBLP:journals/corr/abs-2205-15744,
-  author    = {Zhuoyuan Mao and
-               Chenhui Chu and
-               Sadao Kurohashi},
-  title     = {{EMS:} Efficient and Effective Massively Multilingual Sentence Representation
-               Learning},
-  journal   = {CoRR},
-  volume    = {abs/2205.15744},
-  year      = {2022},
-  url       = {https://doi.org/10.48550/arXiv.2205.15744},
-  doi       = {10.48550/arXiv.2205.15744},
-  eprinttype = {arXiv},
-  eprint    = {2205.15744},
-  timestamp = {Wed, 01 Jun 2022 13:56:25 +0200},
-  biburl    = {https://dblp.org/rec/journals/corr/abs-2205-15744.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
-}
+@ARTICLE{10534791,
+  author={Mao, Zhuoyuan and Chu, Chenhui and Kurohashi, Sadao},
+  journal={IEEE/ACM Transactions on Audio, Speech, and Language Processing}, 
+  title={EMS: Efficient and Effective Massively Multilingual Sentence Embedding Learning}, 
+  year={2024},
+  volume={32},
+  number={},
+  pages={2841-2856},
+  keywords={Training;Computational modeling;Task analysis;Data models;Laser modes;Computer architecture;Adaptation models;Efficient and effective multilingual sentence embedding (EMS);cross-lingual token-level reconstruction (XTR);contrastive learning;zero-shot cross-lingual transfer;cross-lingual sentence retrieval;cross-lingual sentence classification},
+  doi={10.1109/TASLP.2024.3402064}}
 ```
 

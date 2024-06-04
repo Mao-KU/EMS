@@ -1,4 +1,5 @@
 # EMS: Efficient and Effective Massively Multilingual Sentence Representation
+- News: The paper of this project has been accepted and published by IEEE/ACM Transactions on Audio, Speech, and Language Processing. [pdf](https://ieeexplore.ieee.org/abstract/document/10534791)
 - Code for [paper (EMS: Efficient and Effective Massively Multilingual Sentence Representation)](https://arxiv.org/abs/2205.15744)
 - This is the codebase for training multilingual sentence embeddings.
 - Currently our EMS model supports 62 languages.
